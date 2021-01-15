@@ -15,7 +15,7 @@ global class CustomerReportChangeData implements Database.Batchable<SObject>, Da
             
             if(obj.DataChange__c!= date.today()){
             	obj.DataChange__c= date.today();
-				listRecords.add(obj);
+		listRecords.add(obj);
             }
          }
     }
